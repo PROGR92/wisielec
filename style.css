@@ -1,6 +1,6 @@
 body
 {
-    background-color: #222222;
+    background-color: #000000;
     font-size: 24px;
     color: #dddddd;
 }
@@ -73,4 +73,12 @@ main
     font-size: 31px;
     float: left;
     cursor: pointer;
+}
+
+.restart:hover
+{
+    cursor: pointer;
+    font-size: 41px;
+    font-weight: 700;
+    color: #0b770b;
 }

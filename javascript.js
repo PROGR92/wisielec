@@ -68,7 +68,7 @@ function sprawdz(nr)
             var nazwa = 'lit'+nr;
             document.getElementById(nazwa).style.background="#003300";
             document.getElementById(nazwa).style.border="3px solid #00C000";
-            document.getElementById(nazwa).style.color="#00C000";
+            document.getElementById(nazwa).style.color="#00CC00";
             document.getElementById(nazwa).style.cursor="default";
             wypisz_haslo();
         }
@@ -88,9 +88,13 @@ function sprawdz(nr)
             if (licznik>=9)
             {
                 document.getElementById("tytul").innerHTML='PRZEGRANA';
+                document.getElementById("alfabet").innerHTML='UPS... Hasło brzmiało:<br>"'+haslo+'"<br><br><span class="restart" onclick="location.reload()">Jeszcze raz?</span>'
             }
         }
- 
+        if(haslo2==haslo)
+        {
+            document.getElementById("alfabet").innerHTML='Brawo! Udało sie odganąć hasło które brzmi:<br>"'+haslo+'"<br><br><span class="restart" onclick="location.reload()">Jeszcze raz?</span>'
+        }
         
    
  
